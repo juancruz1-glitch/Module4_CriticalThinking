@@ -1,0 +1,34 @@
+START
+
+SET i = 0
+SET total = 0
+SET max = very small number
+SET min = very large number
+
+WHILE i < 5
+    DISPLAY "Enter a floating-point value"
+    READ value
+
+    total = total + value
+
+    IF value > max THEN
+        max = value
+    END IF
+
+    IF value < min THEN
+        min = value
+    END IF
+
+    i = i + 1
+END WHILE
+
+SET average = total / 5
+SET interest = total * 0.20
+
+DISPLAY "Total:", total
+DISPLAY "Average:", average
+DISPLAY "Maximum:", max
+DISPLAY "Minimum:", min
+DISPLAY "Interest at 20%:", interest
+
+END
